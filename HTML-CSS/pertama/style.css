@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #fff8f2;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 50px;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.navbar .title-nav {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(82, 129, 131);
+}
+
+.navbar .title-nav>span {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(169, 197, 198);
+}
+
+.navbar .other-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 15px;
+}
+
+.navbar .other-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.navbar .other-nav ul li:hover {
+    border-bottom: 3px solid cadetblue;
+}
+
+.navbar .other-nav .get-started {
+    background-color: rgba(95, 158, 160, 0.549);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 650;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.674);
+}
+
+.navbar .other-nav .get-started:hover {
+    background-color: cadetblue;
+}
+
+.field {
+    margin: 60px;
+    display: flex;
+}
+
+.field .field-first {
+    width: 562px;
+}
+
+.field-first .title-field {
+    font-size: 40px;
+    font-weight: 600;
+
+    line-height: 50px;
+}
+
+.field-first .title-field span {
+    color: cadetblue;
+    font-weight: 700;
+}
+
+.field-first .content-field ul {
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.field-first .content-field ul li {
+    padding: 5px 30px;
+    background-color: white;
+    margin: 20px;
+    font-size: 10px;
+    box-shadow: 0px 0px 50px -23px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 0px 0px 50px -23px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 0px 50px -23px rgba(0, 0, 0, 0.48);
+    border-radius: 30px;
+}
+.content-field .content-wrap{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.content-field .content-wrap .number{
+    font-size: 30px;
+    font-weight: 700;
+}
+ .field-second img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+ }
