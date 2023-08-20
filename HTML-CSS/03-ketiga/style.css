@@ -1,86 +1,45 @@
-body{
-	font-family: 'Open Sans',sans-serif;
-	background-color:black;
-}
-#container{
-	width: 1000px;
-	height: 550px;
-	margin: 20px auto;	
-}
-#calculator{
-	width: 320px;
-	height: 520px;
-    background-color: #eaedef;
-    margin: 0 auto;
-    top: 20px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-#result{
-    height: 120px;
-}
-#history{
-    text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: #919191;
-}
-#output{
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-}
-#keyboard{
-    height: 400px;
-}
-.operator, .number, .empty{
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-    float: left;
-    border-radius: 50%;
-    border-width: 0;
-    font-size: 15px;
-    font-weight: bold;
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+  }
 
-}
-.number, .empty{
-    background-color: #eaedef;
-}
-.operator{
-    background-color:lightgrey;
-}
-.number, .operator{
-    cursor: pointer;
-}
-.number:active, .operator:active{
-    font-size: 13px;
-}
-.number:focus, .operator:focus, .empty:focus{
-    outline: 0;
-}
-button:nth-child(4){
-    font-size: 20px;
-    background-color: #20b2aa;
-}
-button:nth-child(8){
-    font-size: 20px;
-    background-color: #ffa500;
-}
-button:nth-child(12){
-    font-size: 20px;
-    background-color: #f08080;
-}
-button:nth-child(16){
-    font-size: 20px;
-    background-color: #7d93e0;
-}
-button:nth-child(20){
-    font-size: 20px;
-    background-color: #9477af;
-}
+  body {
+      background-color: #959595;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .container {
+      background-color: #fff;
+      max-width: 300px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  .display {
+      outline: none;
+  }
+
+  .buttons {
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .buttons button {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .buttons button:active {
+      transform: scale(0.99);
+  }
+
+  .operator {
+      color: rgb(79, 129, 222);
+  }
